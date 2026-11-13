@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "package": "com.tencent.tmgp.pubgmhd",
+  "version_name": "1.39.13",
+  "version_code": 16220,
+  "abi": "arm64-v8a",
+  "module": "libUE4.so",
+  "build_id": "2d0c2e25ea80456aa1417850f45432d3ed5344c4",
+  "sha256": "2cf255856b950340ad4c3931523dce6bfd4a54ef97c82e27e442543b07dad905",
+  "module_file_size": 392107320,
+  "offsets": {
+    "process_event": "0x0E016EAC",
+    "gnames": "0x176E6650",
+    "gobjects": "0x17E8B538",
+    "gactivity": "0x175F2B78",
+    "gengine": "0x181BC008"
+  },
+  "layout": {
+    "name_kind": "legacy",
+    "names_indirect": 1,
+    "chunk_size": 16384,
+    "name_entry_string": 12,
+    "name_entry_header": 8,
+    "name_entry_index_shift": 1,
+    "name_entry_wide_bit": 0,
+    "object_name": 24,
+    "object_name_number": 28,
+    "object_class": 16,
+    "object_outer": 32,
+    "object_flags": 8,
+    "object_index": 12,
+    "function_flags": 136,
+    "function_native": 176,
+    "function_native_adjustor": 184,
+    "objects_pointer": 16,
+    "object_item_size": 24,
+    "object_item_pointer": 0,
+    "gobjects_kind": "custom_array_view_anchor",
+    "objects_probe_scan_bound": 8,
+    "objects_first_chunk_capacity": 48
+  },
+  "process_event_prologue": "fd7bbaa9fc6f01a9fa6702a9f85f03a9",
+  "process_event_vtable_index": 94,
+  "process_event_vtable_byte_offset": 752,
+  "offset_semantics": {
+    "address_kind": "All offsets are RVAs relative to the libUE4.so ELF load bias, not file offsets or absolute addresses.",
+    "gactivity": "Address of an android_app* global slot. Read the pointer at base + RVA; android_app.activity is at +0x18. This is not a JNI jobject.",
+    "gnames": "Address of a pointer to the legacy name chunk table. Read once at base + RVA, then read chunk[id / 16384], then entry[id % 16384]; ANSI bytes begin at entry + 12.",
+    "gobjects": "Reference-dumper compatibility anchor at 0x17E8B538 inside a custom global object registry; first object-item array pointer at +0x10. It is not a complete standard GUObjectArray layout. Enclosing global referenced by code is 0x17E8B480; arrays at its +0xC8 and capacities at +0xE8.",
+    "gengine": "User-supplied RVA verified by reading the global pointer and resolving the live object and class through GNames."
+  }
+}
